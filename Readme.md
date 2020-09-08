@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Кирилл Подлужный](https://up.htmlacademy.ru/htmlcss/29/user/232352).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
