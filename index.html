@@ -21,19 +21,19 @@
             <div class="nav-top__user-block">
               <div class="nav-top__user-block_checkIn">
                 <a class="nav-top__user-block_checkIn-link" href="#">
-                  <img src="#" alt="" />Войти</a
+                  <img src="#" alt="Войти" title="Войти" />Войти</a
                 >
               </div>
               <div class="nav-top__basket">
                 <ul>
                   <li>
                     <a class="nav-top__basket_compare" href="#">
-                      <img src="#" alt="" />Сравнить</a
+                      <img src="#" alt="Сравнить" title="Сравнить" />Сравнить</a
                     >
                   </li>
                   <li>
                     <a class="nav-top__basket_basket" href="#">
-                      <img src="#" alt="" />Корзина</a
+                      <img src="#" alt="Корзина" title="Корзина" />Корзина</a
                     >
                   </li>
                 </ul>
@@ -59,6 +59,18 @@
       <div class="main__wr">
         <section class="slider">
           <div class="slider__content">
+            <div class="slider__controls">
+              <div class="slider__controls_button">
+                <a href="#">подробнее</a>
+              </div>
+              <div class="slider__controls_controls"></div>
+              <input type="radio" id="btn-1" name="toggle" checked />
+              <input type="radio" id="btn-2" name="toggle" />
+              <input type="radio" id="btn-3" name="toggle" />
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
             <div class="slider__item">
               <div class="slider__content_numder">
                 <p>01</p>
@@ -71,17 +83,55 @@
                   килограмм.
                 </p>
               </div>
-              <div class="slider__controls">
-                <div class="slider__controls_button">
-                  <a href="#">подробнее</a>
-                </div>
-                <div class="slider__controls_controls"></div>
-                <input type="radio" id="btn-1" name="toggle" checked />
-                <input type="radio" id="btn-2" name="toggle" />
-                <input type="radio" id="btn-3" name="toggle" />
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
-                <label for="btn-3"></label>
+              <table class="slider__feature">
+                <tr>
+                  <th>8,5 м</th>
+                  <th>5 кг</th>
+                  <th>Карбон</th>
+                </tr>
+                <tr>
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+            <div class="slider__item">
+              <div class="slider__content_numder">
+                <p>02</p>
+              </div>
+              <div class="slider__content_text">
+                <h2>Делай селфи, как Бен Стиллер!</h2>
+                <p>
+                  Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5
+                  килограмм.
+                </p>
+              </div>
+              <table class="slider__feature">
+                <tr>
+                  <th>8,5 м</th>
+                  <th>5 кг</th>
+                  <th>Карбон</th>
+                </tr>
+                <tr>
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+            <div class="slider__item">
+              <div class="slider__content_numder">
+                <p>03</p>
+              </div>
+              <div class="slider__content_text">
+                <h2>Делай селфи, как Бен Стиллер!</h2>
+                <p>
+                  Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5
+                  килограмм.
+                </p>
               </div>
               <table class="slider__feature">
                 <tr>
@@ -101,50 +151,58 @@
         <section class="main__catalog">
           <article class="main__catalog_item">
             <div class="main__catalog_img">
-              <img src="#" alt="" title="" />
+              <img
+                src="#"
+                alt="Виртуальная реальность"
+                title="Виртуальная реальность"
+              />
             </div>
             <div class="main__catalog_text">
-              <h3>Виртуальная реальность</h3>
+              <h3><a href="catalog.html">Виртуальная реальность</a></h3>
             </div>
           </article>
           <article class="main__catalog_item">
             <div class="main__catalog_img">
-              <img src="#" alt="" title="" />
+              <img
+                src="#"
+                alt="Моноподы для селфи"
+                title="Моноподы для селфи"
+              />
             </div>
             <div class="main__catalog_text">
-              <h3>Моноподы для селфи</h3>
+              <h3><a href="catalog.html">Моноподы для селфи</a></h3>
             </div>
           </article>
           <article class="main__catalog_item">
             <div class="main__catalog_img">
-              <img src="#" alt="" title="" />
+              <img src="#" alt="Экшн-камеры" title="Экшн-камеры" />
             </div>
             <div class="main__catalog_text">
-              <h3>Экшн-камеры</h3>
+              <h3><a href="catalog.html">Экшн-камеры</a></h3>
             </div>
           </article>
           <article class="main__catalog_item">
             <div class="main__catalog_img">
-              <img src="#" alt="" title="" />
+              <img src="#" alt="Фитнес-браслеты" title="Фитнес-браслеты" />
             </div>
             <div class="main__catalog_text">
-              <h3>Фитнес-браслеты</h3>
+              <h3><a href="catalog.html">Фитнес-браслеты</a></h3>
             </div>
           </article>
           <article class="main__catalog_item">
             <div class="main__catalog_img">
-              <img src="#" alt="" title="" />
+              <img src="#" alt="Умные часы" title="Умные часы" />
             </div>
             <div class="main__catalog_text">
-              <h3>Умные часы</h3>
+              <h3><a href="catalog.html">Умные часы</a></h3>
             </div>
           </article>
           <article class="main__catalog_item">
             <div class="main__catalog_img">
-              <img src="#" alt="" title="" />
+              <img src="#" alt="Квадрокоптеры" title="Квадрокоптеры" />
             </div>
             <div class="main__catalog_text">
-              <h3>Квадрокоптеры</h3>
+              <h3><a href="catalog.html">Квадрокоптеры</a></h3>
             </div>
           </article>
         </section>
@@ -180,28 +238,44 @@
                   на ваш этаж.
                 </p>
               </div>
+              <div class="advantage__content_item">
+                <h2>Гарантия</h2>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                  на ваш этаж.
+                </p>
+              </div>
+              <div class="advantage__content_item">
+                <h2>Кредит</h2>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                  на ваш этаж.
+                </p>
+              </div>
             </div>
           </div>
         </section>
         <section class="main-brands">
           <div class="main-brands__item">
             <a href="#">
-              <img src="#" alt="" title="" />
+              <img src="#" alt="brand" title="brand" />
             </a>
           </div>
           <div class="main-brands__item">
             <a href="#">
-              <img src="#" alt="" title="" />
+              <img src="#" alt="brand" title="brand" />
             </a>
           </div>
           <div class="main-brands__item">
             <a href="#">
-              <img src="#" alt="" title="" />
+              <img src="#" alt="brand" title="brand" />
             </a>
           </div>
           <div class="main-brands__item">
             <a href="#">
-              <img src="#" alt="" title="" />
+              <img src="#" alt="brand" title="brand" />
             </a>
           </div>
         </section>
@@ -239,7 +313,7 @@
       <div class="footer-wr">
         <div class="footer-content">
           <section class="footer-content__left">
-            <img src="#" alt="" />
+            <img src="#" alt="Логотип" title="Логотип" />
             <address>г. Москва, ул. Строителей, 15</address>
           </section>
           <section class="footer-content__center">
@@ -262,21 +336,27 @@
             <div class="footer-user-block__box">
               <ul>
                 <li>
-                  <a href=""><img src="#" alt="" /> Войти</a>
+                  <a href=""><img src="#" alt="Войти" title="Войти" /> Войти</a>
                 </li>
                 <li>
-                  <a href=""><img src="#" alt="" /> Сравнить</a>
+                  <a href=""
+                    ><img src="#" alt="Сравнить" title="Сравнить" /> Сравнить</a
+                  >
                 </li>
                 <li>
-                  <a href=""><img src="#" alt="" /> Корзина</a>
+                  <a href=""
+                    ><img src="#" alt="Корзина" title="Корзина" /> Корзина</a
+                  >
                 </li>
               </ul>
             </div>
             <div class="tel">
-              <p>Тел.: +7 (495) 495-95-95</p>
+              <a href="tel:74954959595">Тел.: +7 (495) 495-95-95</a>
             </div>
             <div class="html-logo">
-              <a href=""><img src="#" alt="" /></a>
+              <a target="_blank" href="https://htmlacademy.ru/intensive/htmlcss"
+                ><img src="#" alt="htmlacademy" title="htmlacademy"
+              /></a>
             </div>
           </section>
         </div>
