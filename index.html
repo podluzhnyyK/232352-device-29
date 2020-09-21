@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="main-header">
@@ -20,19 +22,22 @@
             </div>
             <div class="nav-top__user-block">
               <div class="nav-top__user-block_checkIn">
-                <a class="nav-top__user-block_checkIn-link" href="#">
+                <a
+                  class="nav-top__user-block_checkIn-link nav-top--text"
+                  href="#"
+                >
                   <img src="#" alt="Войти" title="Войти" />Войти</a
                 >
               </div>
               <div class="nav-top__basket">
                 <ul>
                   <li>
-                    <a class="nav-top__basket_compare" href="#">
+                    <a class="nav-top__basket_compare nav-top--text" href="#">
                       <img src="#" alt="Сравнить" title="Сравнить" />Сравнить</a
                     >
                   </li>
                   <li>
-                    <a class="nav-top__basket_basket" href="#">
+                    <a class="nav-top__basket_basket nav-top--text" href="#">
                       <img src="#" alt="Корзина" title="Корзина" />Корзина</a
                     >
                   </li>
@@ -42,13 +47,13 @@
           </div>
           <div class="nav-down">
             <div class="nav-down__catalog">
-              <a href="#">каталог товаров</a>
+              <a href="#" class="nav-down--text">каталог товаров</a>
             </div>
             <div class="nav-down__menu">
               <ul>
-                <li><a href="#">доставка</a></li>
-                <li><a href="#">гарантия</a></li>
-                <li><a href="#">контакты</a></li>
+                <li><a href="#" class="nav-down--text">доставка</a></li>
+                <li><a href="#" class="nav-down--text">гарантия</a></li>
+                <li><a href="#" class="nav-down--text">контакты</a></li>
               </ul>
             </div>
           </div>
@@ -61,7 +66,7 @@
           <div class="slider__content">
             <div class="slider__controls">
               <div class="slider__controls_button">
-                <a href="#">подробнее</a>
+                <a class="btn" href="#">подробнее</a>
               </div>
               <div class="slider__controls_controls"></div>
               <input type="radio" id="btn-1" name="toggle" checked />
@@ -73,11 +78,13 @@
             </div>
             <div class="slider__item">
               <div class="slider__content_numder">
-                <p>01</p>
+                <p class="slider__content_numder--text">01</p>
               </div>
               <div class="slider__content_text">
-                <h2>Делай селфи, как Бен Стиллер!</h2>
-                <p>
+                <h2 class="slider__content_text--headline">
+                  Делай селфи, как Бен Стиллер!
+                </h2>
+                <p class="slider__content_text--text">
                   Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5
                   килограмм.
@@ -85,24 +92,26 @@
               </div>
               <table class="slider__feature">
                 <tr>
-                  <th>8,5 м</th>
-                  <th>5 кг</th>
-                  <th>Карбон</th>
+                  <th class="slider__feature-th">8,5 м</th>
+                  <th class="slider__feature-th">5 кг</th>
+                  <th class="slider__feature-th">Карбон</th>
                 </tr>
                 <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
+                  <td class="slider__feature-td">Длина палки</td>
+                  <td class="slider__feature-td">Вес палки</td>
+                  <td class="slider__feature-td">Материал</td>
                 </tr>
               </table>
             </div>
             <div class="slider__item">
               <div class="slider__content_numder">
-                <p>02</p>
+                <p class="slider__content_numder--text">02</p>
               </div>
               <div class="slider__content_text">
-                <h2>Делай селфи, как Бен Стиллер!</h2>
-                <p>
+                <h2 class="slider__content_text--headline">
+                  Делай селфи, как Бен Стиллер!
+                </h2>
+                <p class="slider__content_text--text">
                   Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5
                   килограмм.
@@ -110,24 +119,26 @@
               </div>
               <table class="slider__feature">
                 <tr>
-                  <th>8,5 м</th>
-                  <th>5 кг</th>
-                  <th>Карбон</th>
+                  <th class="slider__feature-th">8,5 м</th>
+                  <th class="slider__feature-th">5 кг</th>
+                  <th class="slider__feature-th">Карбон</th>
                 </tr>
                 <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
+                  <td class="slider__feature-td">Длина палки</td>
+                  <td class="slider__feature-td">Вес палки</td>
+                  <td class="slider__feature-td">Материал</td>
                 </tr>
               </table>
             </div>
             <div class="slider__item">
               <div class="slider__content_numder">
-                <p>03</p>
+                <p class="slider__content_numder--text">03</p>
               </div>
               <div class="slider__content_text">
-                <h2>Делай селфи, как Бен Стиллер!</h2>
-                <p>
+                <h2 class="slider__content_text--headline">
+                  Делай селфи, как Бен Стиллер!
+                </h2>
+                <p class="slider__content_text--text">
                   Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5
                   килограмм.
@@ -135,14 +146,14 @@
               </div>
               <table class="slider__feature">
                 <tr>
-                  <th>8,5 м</th>
-                  <th>5 кг</th>
-                  <th>Карбон</th>
+                  <th class="slider__feature-th">8,5 м</th>
+                  <th class="slider__feature-th">5 кг</th>
+                  <th class="slider__feature-th">Карбон</th>
                 </tr>
                 <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
+                  <td class="slider__feature-td">Длина палки</td>
+                  <td class="slider__feature-td">Вес палки</td>
+                  <td class="slider__feature-td">Материал</td>
                 </tr>
               </table>
             </div>
@@ -158,7 +169,9 @@
               />
             </div>
             <div class="main__catalog_text">
-              <h3><a href="catalog.html">Виртуальная реальность</a></h3>
+              <h3 class="main__catalog_text-headline">
+                <a href="catalog.html">Виртуальная реальность</a>
+              </h3>
             </div>
           </article>
           <article class="main__catalog_item">
@@ -170,7 +183,9 @@
               />
             </div>
             <div class="main__catalog_text">
-              <h3><a href="catalog.html">Моноподы для селфи</a></h3>
+              <h3 class="main__catalog_text-headline">
+                <a href="catalog.html">Моноподы для селфи</a>
+              </h3>
             </div>
           </article>
           <article class="main__catalog_item">
@@ -178,7 +193,9 @@
               <img src="#" alt="Экшн-камеры" title="Экшн-камеры" />
             </div>
             <div class="main__catalog_text">
-              <h3><a href="catalog.html">Экшн-камеры</a></h3>
+              <h3 class="main__catalog_text-headline">
+                <a href="catalog.html">Экшн-камеры</a>
+              </h3>
             </div>
           </article>
           <article class="main__catalog_item">
@@ -186,7 +203,9 @@
               <img src="#" alt="Фитнес-браслеты" title="Фитнес-браслеты" />
             </div>
             <div class="main__catalog_text">
-              <h3><a href="catalog.html">Фитнес-браслеты</a></h3>
+              <h3 class="main__catalog_text-headline">
+                <a href="catalog.html">Фитнес-браслеты</a>
+              </h3>
             </div>
           </article>
           <article class="main__catalog_item">
@@ -194,7 +213,9 @@
               <img src="#" alt="Умные часы" title="Умные часы" />
             </div>
             <div class="main__catalog_text">
-              <h3><a href="catalog.html">Умные часы</a></h3>
+              <h3 class="main__catalog_text-headline">
+                <a href="catalog.html">Умные часы</a>
+              </h3>
             </div>
           </article>
           <article class="main__catalog_item">
@@ -202,7 +223,9 @@
               <img src="#" alt="Квадрокоптеры" title="Квадрокоптеры" />
             </div>
             <div class="main__catalog_text">
-              <h3><a href="catalog.html">Квадрокоптеры</a></h3>
+              <h3 class="main__catalog_text-headline">
+                <a href="catalog.html">Квадрокоптеры</a>
+              </h3>
             </div>
           </article>
         </section>
@@ -217,38 +240,44 @@
                     name="toggle"
                     checked
                   />
-                  <label for="btn__advantage-1">доставка</label>
+                  <label class="advantage__sort--label" for="btn__advantage-1"
+                    >доставка</label
+                  >
                 </li>
                 <li>
                   <input type="radio" id="btn__advantage-2" name="toggle" />
-                  <label for="btn__advantage-2">гарантия</label>
+                  <label class="advantage__sort--label" for="btn__advantage-2"
+                    >гарантия</label
+                  >
                 </li>
                 <li>
                   <input type="radio" id="btn__advantage-3" name="toggle" />
-                  <label for="btn__advantage-3">кредит</label>
+                  <label class="advantage__sort--label" for="btn__advantage-3"
+                    >кредит</label
+                  >
                 </li>
               </ul>
             </div>
             <div class="advantage__content">
               <div class="advantage__content_item">
-                <h2>Доставка</h2>
-                <p>
+                <h2 class="advantage__content_item--headline">Доставка</h2>
+                <p class="advantage__content_item--text">
                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду
                   совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
                   на ваш этаж.
                 </p>
               </div>
               <div class="advantage__content_item">
-                <h2>Гарантия</h2>
-                <p>
+                <h2 class="advantage__content_item--headline">Гарантия</h2>
+                <p class="advantage__content_item--text">
                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду
                   совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
                   на ваш этаж.
                 </p>
               </div>
               <div class="advantage__content_item">
-                <h2>Кредит</h2>
-                <p>
+                <h2 class="advantage__content_item--headline">Кредит</h2>
+                <p class="advantage__content_item--text">
                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду
                   совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
                   на ваш этаж.
@@ -281,47 +310,49 @@
         </section>
         <section class="main-info">
           <div class="info__about-us">
-            <h2>О нас</h2>
-            <p>
+            <h2 class="info__about-us--headline">О нас</h2>
+            <p class="info__about-us--text">
               Огромный выбор гаджетов не оставит равнодушным гика, который есть
               в каждом из нас.
             </p>
-            <p>
+            <p class="info__about-us--text">
               Мы можем доставить ваш товар в самые отдаленные точки России!
               DEVICE работает со многими транспортными компаниями:
             </p>
             <ul>
-              <li>Деловые линии</li>
-              <li>Автотрейдинг</li>
-              <li>ЖелДорЭкспедиция</li>
+              <li class="info__about-us--list">Деловые линии</li>
+              <li class="info__about-us--list">Автотрейдинг</li>
+              <li class="info__about-us--list">ЖелДорЭкспедиция</li>
             </ul>
-            <a href="#">подробнее о нас</a>
+            <a class="btn" href="#">подробнее о нас</a>
           </div>
           <div class="info__contacts">
-            <h2>Контакты</h2>
-            <p>
+            <h2 class="info__contacts--headline">Контакты</h2>
+            <p class="info__contacts--text">
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
               сможете проверить работоспособность покупки. Всякое бывает.
             </p>
             <div class="info__contacts_map"></div>
-            <button>напишите нам</button>
+            <button class="btn">напишите нам</button>
           </div>
         </section>
       </div>
     </main>
-    <footer>
+    <footer class="footer-main">
       <div class="footer-wr">
         <div class="footer-content">
           <section class="footer-content__left">
             <img src="#" alt="Логотип" title="Логотип" />
-            <address>г. Москва, ул. Строителей, 15</address>
+            <address class="footer-content__left--address">
+              г. Москва, ул. Строителей, 15
+            </address>
           </section>
           <section class="footer-content__center">
             <div class="footer-nav">
               <ul>
-                <li>доставка</li>
-                <li>гарантия</li>
-                <li>контакты</li>
+                <li><a class="footer-nav--list" href="#">доставка</a></li>
+                <li><a class="footer-nav--list" href="#">гарантия</a></li>
+                <li><a class="footer-nav--list" href="#">контакты</a></li>
               </ul>
             </div>
             <div class="footer-social">
@@ -336,22 +367,26 @@
             <div class="footer-user-block__box">
               <ul>
                 <li>
-                  <a href=""><img src="#" alt="Войти" title="Войти" /> Войти</a>
+                  <a class="footer-user--nav" href=""
+                    ><img src="#" alt="Войти" title="Войти" /> Войти</a
+                  >
                 </li>
                 <li>
-                  <a href=""
+                  <a class="footer-user--nav" href=""
                     ><img src="#" alt="Сравнить" title="Сравнить" /> Сравнить</a
                   >
                 </li>
                 <li>
-                  <a href=""
+                  <a class="footer-user--nav" href=""
                     ><img src="#" alt="Корзина" title="Корзина" /> Корзина</a
                   >
                 </li>
               </ul>
             </div>
             <div class="tel">
-              <a href="tel:74954959595">Тел.: +7 (495) 495-95-95</a>
+              <a class="tel--text" href="tel:74954959595"
+                >Тел.: +7 (495) 495-95-95</a
+              >
             </div>
             <div class="html-logo">
               <a target="_blank" href="https://htmlacademy.ru/intensive/htmlcss"
