@@ -63,7 +63,6 @@
   line-height: 20px;
   font-family: "Open Sans", Arial, sans-serif;
   color: var(--basic-black);
-  font-family: Open Sans;
 }
 
 .nav-down--text {
@@ -96,7 +95,6 @@
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
   color: var(--basic-black);
-  font-family: Gilroy;
 }
 
 .slider__content_text--text {
