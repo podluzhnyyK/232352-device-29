@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <div class="main-header__wr">
         <nav class="main-nav">
@@ -61,21 +61,9 @@
       </div>
     </header>
     <main>
-      <div class="main__wr">
+      <div class="main__wr grid-column">
         <section class="slider">
           <div class="slider__content">
-            <div class="slider__controls">
-              <div class="slider__controls_button">
-                <a class="btn" href="#">подробнее</a>
-              </div>
-              <div class="slider__controls_controls"></div>
-              <input type="radio" id="btn-1" name="toggle" checked />
-              <input type="radio" id="btn-2" name="toggle" />
-              <input type="radio" id="btn-3" name="toggle" />
-              <label for="btn-1"></label>
-              <label for="btn-2"></label>
-              <label for="btn-3"></label>
-            </div>
             <div class="slider__item">
               <div class="slider__content_number">
                 <p class="slider__content_number--text">01</p>
@@ -90,6 +78,18 @@
                   килограмм.
                 </p>
               </div>
+              <div class="slider__controls">
+                <div class="slider__controls_button">
+                  <a class="btn" href="#">подробнее</a>
+                </div>
+                <div class="slider__controls_controls"></div>
+                <input type="radio" id="btn-1" name="toggle" checked />
+                <input type="radio" id="btn-2" name="toggle" />
+                <input type="radio" id="btn-3" name="toggle" />
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+              </div>
               <table class="slider__feature">
                 <tr>
                   <th class="slider__feature-th">8,5 м</th>
@@ -103,30 +103,24 @@
                 </tr>
               </table>
             </div>
-            <div class="slider__item">
+            <!--<div class="slider__item">
               <div class="slider__content_number">
                 <p class="slider__content_number--text">02</p>
               </div>
               <div class="slider__content_text">
                 <h2 class="slider__content_text--headline">
-                  Делай селфи, как Бен Стиллер!
+                  Худеем правильно!
                 </h2>
                 <p class="slider__content_text--text">
-                  Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5
-                  килограмм.
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                 </p>
               </div>
               <table class="slider__feature">
                 <tr>
-                  <th class="slider__feature-th">8,5 м</th>
-                  <th class="slider__feature-th">5 кг</th>
-                  <th class="slider__feature-th">Карбон</th>
+                  <th class="slider__feature-th">48 часов</th>                  
                 </tr>
                 <tr>
-                  <td class="slider__feature-td">Длина палки</td>
-                  <td class="slider__feature-td">Вес палки</td>
-                  <td class="slider__feature-td">Материал</td>
+                  <td class="slider__feature-td">Без подзарядки</td>                  
                 </tr>
               </table>
             </div>
@@ -136,27 +130,23 @@
               </div>
               <div class="slider__content_text">
                 <h2 class="slider__content_text--headline">
-                  Делай селфи, как Бен Стиллер!
+                  Порхает как бабочка, жалит как пчела!
                 </h2>
                 <p class="slider__content_text--text">
-                  Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5
-                  килограмм.
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
               </div>
               <table class="slider__feature">
                 <tr>
-                  <th class="slider__feature-th">8,5 м</th>
-                  <th class="slider__feature-th">5 кг</th>
-                  <th class="slider__feature-th">Карбон</th>
+                  <th class="slider__feature-th">800 м</th>
+                  <th class="slider__feature-th">50 м</th>                  
                 </tr>
                 <tr>
-                  <td class="slider__feature-td">Длина палки</td>
-                  <td class="slider__feature-td">Вес палки</td>
-                  <td class="slider__feature-td">Материал</td>
+                  <td class="slider__feature-td">Дальность полета</td>
+                  <td class="slider__feature-td">Радиус поражения</td>                  
                 </tr>
               </table>
-            </div>
+            </div>-->
           </div>
         </section>
         <section class="main__catalog">
@@ -295,22 +285,22 @@
                   на ваш этаж.
                 </p>
               </div>
-              <div class="advantage__content_item">
+              <!--<div class="advantage__content_item">
                 <h2 class="advantage__content_item--headline">Гарантия</h2>
                 <p class="advantage__content_item--text">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж.
+                  Если из-за возгорания купленного у нас товара у вас сгорит дом
+                  — не переживайте, мы выдадим вам новый. Товар, не дом, конечно
+                  же.
                 </p>
               </div>
               <div class="advantage__content_item">
                 <h2 class="advantage__content_item--headline">Кредит</h2>
                 <p class="advantage__content_item--text">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж.
+                  Залезть в долговую яму стало проще! Кредитные консультанты
+                  подберут для вас наиболее выгодные условия кредита. Выгодные
+                  для нашего банка, разумеется.
                 </p>
-              </div>
+              </div>-->
             </div>
           </div>
         </section>

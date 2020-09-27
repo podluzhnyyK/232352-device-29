@@ -54,6 +54,28 @@
   --status: #f6dada;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/*main-header*/
+
+.main-header__wr {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: grid;
+}
+
 .main-nav {
   background-color: var(--special-yellow);
 }
@@ -79,6 +101,29 @@
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
   color: var(--basic-black);
+}
+
+/*main*/
+
+.main__wr {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.grid-column {
+  display: grid;
+}
+
+/*slider*/
+
+.slider__content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.slider__item {
+  max-width: 560px;
+  grid-column: -1;
 }
 
 .slider__content_number--text {
@@ -120,6 +165,14 @@
   color: var(--basic-black);
 }
 
+/*main__catalog*/
+
+.main__catalog {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  column-gap: 40px;
+}
+
 .main__catalog_text-headline {
   font-size: 18px;
   line-height: 22px;
@@ -127,7 +180,15 @@
   font-weight: 900;
   color: var(--basic-black);
 }
+/*advantage*/
+.main__advantage_bg {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
 
+.advantage__sort {
+  width: 260px;
+}
 .advantage__sort--label {
   font-size: 18px;
   line-height: 22px;
@@ -150,6 +211,22 @@
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
   color: var(--basic-black);
+}
+
+/*main-brands*/
+
+.main-brands {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  column-gap: 40px;
+}
+
+/*main-info*/
+
+.main-info {
+  display: grid;
+  grid-template-columns: repeat(2, 560px);
+  column-gap: 40px;
 }
 
 .info__about-us--headline {
@@ -192,8 +269,20 @@
   color: var(--basic-black);
 }
 
+/*footer*/
+
 .footer-main {
   background-color: var(--basic-dark);
+}
+
+.footer-wr {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-content__left--address {
