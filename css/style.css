@@ -59,6 +59,7 @@
 }
 
 .page-body {
+  padding-top: 40px;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -74,10 +75,45 @@
 
 .main-nav {
   display: grid;
+  position: relative;
+  background-color: var(--special-yellow);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 44px;
+  padding-bottom: 146px;
 }
 
-.main-nav {
-  background-color: var(--special-yellow);
+.nav-catalog {
+  padding-bottom: 50px;
+}
+
+.nav-top {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.nav-top__logo {
+  position: absolute;
+  bottom: 74px;
+}
+
+.nav-top__user-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav-top__basket-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav-top--text {
@@ -85,6 +121,80 @@
   line-height: 20px;
   font-family: "Open Sans", Arial, sans-serif;
   color: var(--basic-black);
+  text-decoration: none;
+  padding-left: 25px;
+}
+
+.nav-top__basket-list--item {
+  margin-right: 40px;
+}
+
+.nav-top__basket-list--item:last-child {
+  margin-right: 0;
+}
+
+.nav-down {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-down__menu {
+  width: 50%;
+}
+
+.nav-down__menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-down__menu-item {
+  margin-right: 38px;
+}
+
+.nav-down__menu-item:last-child {
+  flex-grow: 1;
+  text-align: end;
+  margin-right: 0;
+}
+
+/*dropdown-catalog-menu*/
+
+.dropdown-catalog-menu {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  height: 50%;
+  width: 93%;
+  z-index: 1;
+}
+
+.main-catalog-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 61px;
+  padding-top: 30px;
+}
+
+.main-catalog-menu-list:last-child {
+  margin: 0;
+}
+
+.main-catalog-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.main-catalog-item--link {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: var(--basic-black);
+  text-decoration: none;
 }
 
 .nav-down--text {
@@ -93,6 +203,8 @@
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 900;
   color: var(--basic-black);
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .btn {
