@@ -106,13 +106,23 @@
       </div>
     </header>
     <main>
-      <div class="container grid-column">
-        <section class="slider">
-          <div class="slider__content">
+      <div class="grid-column">
+        <section class="container slider">
+          <div class="slider__controls">            
+            <div class="slider__controls_controls"></div>
+            <input type="radio" id="btn-1" name="toggle-slider" checked />
+            <input type="radio" id="btn-2" name="toggle-slider" />
+            <input type="radio" id="btn-3" name="toggle-slider" />
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>          
             <div class="slider__item">
-              <div class="slider__content_number">
-                <p class="slider__content_number--text">01</p>
-              </div>
+              <div class="slider__img"><img src="img/slider-1-1.png" alt="палка для селфи" title="палка для селфи"></div>
+              <div class="slider__content">
+                <div class="slider__content_number">
+                  <p class="slider__content_number--text">01</p>
+                </div>
               <div class="slider__content_text">
                 <h2 class="slider__content_text--headline">
                   Делай селфи, как Бен Стиллер!
@@ -123,18 +133,9 @@
                   килограмм.
                 </p>
               </div>
-              <div class="slider__controls">
-                <div class="slider__controls_button">
-                  <a class="btn" href="#">подробнее</a>
-                </div>
-                <div class="slider__controls_controls"></div>
-                <input type="radio" id="btn-1" name="toggle" checked />
-                <input type="radio" id="btn-2" name="toggle" />
-                <input type="radio" id="btn-3" name="toggle" />
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
-                <label for="btn-3"></label>
-              </div>
+              <div class="slider__button">
+                <a class="btn btn-slider" href="#">подробнее</a>
+              </div>            
               <table class="slider__feature">
                 <tr>
                   <th class="slider__feature-th">8,5 м</th>
@@ -147,6 +148,7 @@
                   <td class="slider__feature-td">Материал</td>
                 </tr>
               </table>
+              </div>
             </div>
             <!--<div class="slider__item">
               <div class="slider__content_number">
@@ -194,7 +196,7 @@
             </div>-->
           </div>
         </section>
-        <section class="main__catalog">
+        <section class="container main__catalog">
           <article class="main__catalog_item">
             <div class="main__catalog_img">
               <img
@@ -206,8 +208,8 @@
               />
             </div>
             <div class="main__catalog_text">
-              <h3 class="main__catalog_text-headline">
-                <a href="catalog.html">Виртуальная реальность</a>
+              <h3>
+                <a class="main__catalog_text-headline" href="catalog.html">Виртуальная реальность</a>
               </h3>
             </div>
           </article>
@@ -222,8 +224,8 @@
               />
             </div>
             <div class="main__catalog_text">
-              <h3 class="main__catalog_text-headline">
-                <a href="catalog.html">Моноподы для селфи</a>
+              <h3>
+                <a class="main__catalog_text-headline" href="catalog.html">Моноподы для селфи</a>
               </h3>
             </div>
           </article>
@@ -238,8 +240,8 @@
               />
             </div>
             <div class="main__catalog_text">
-              <h3 class="main__catalog_text-headline">
-                <a href="catalog.html">Экшн-камеры</a>
+              <h3>
+                <a class="main__catalog_text-headline" href="catalog.html">Экшн-камеры</a>
               </h3>
             </div>
           </article>
@@ -254,8 +256,8 @@
               />
             </div>
             <div class="main__catalog_text">
-              <h3 class="main__catalog_text-headline">
-                <a href="catalog.html">Фитнес-браслеты</a>
+              <h3>
+                <a class="main__catalog_text-headline" href="catalog.html">Фитнес-браслеты</a>
               </h3>
             </div>
           </article>
@@ -270,8 +272,8 @@
               />
             </div>
             <div class="main__catalog_text">
-              <h3 class="main__catalog_text-headline">
-                <a href="catalog.html">Умные часы</a>
+              <h3>
+                <a class="main__catalog_text-headline" href="catalog.html">Умные часы</a>
               </h3>
             </div>
           </article>
@@ -286,36 +288,36 @@
               />
             </div>
             <div class="main__catalog_text">
-              <h3 class="main__catalog_text-headline">
-                <a href="catalog.html">Квадрокоптеры</a>
+              <h3>
+                <a class="main__catalog_text-headline" href="catalog.html">Квадрокоптеры</a>
               </h3>
             </div>
           </article>
         </section>
         <section class="main__advantage">
-          <div class="main__advantage_bg">
+          <div class="container main__advantage_box">
             <div class="advantage__sort">
-              <ul>
-                <li>
-                  <input
+              <ul class="advantage__sort-list">
+                <li class="advantage__sort-item">
+                  <input class="advantage__sort-radio"
                     type="radio"
                     id="btn__advantage-1"
                     name="toggle"
                     checked
                   />
-                  <label class="advantage__sort--label" for="btn__advantage-1"
+                  <label class="btn btn-advantage advantage__sort--label" for="btn__advantage-1"
                     >доставка</label
                   >
                 </li>
-                <li>
-                  <input type="radio" id="btn__advantage-2" name="toggle" />
-                  <label class="advantage__sort--label" for="btn__advantage-2"
+                <li class="advantage__sort-item">
+                  <input class="advantage__sort-radio" type="radio" id="btn__advantage-2" name="toggle" />
+                  <label class="btn btn-advantage advantage__sort--label" for="btn__advantage-2"
                     >гарантия</label
                   >
                 </li>
-                <li>
-                  <input type="radio" id="btn__advantage-3" name="toggle" />
-                  <label class="advantage__sort--label" for="btn__advantage-3"
+                <li class="advantage__sort-item">
+                  <input class="advantage__sort-radio" type="radio" id="btn__advantage-3" name="toggle" />
+                  <label class="btn btn-advantage advantage__sort--label" for="btn__advantage-3"
                     >кредит</label
                   >
                 </li>
@@ -349,7 +351,7 @@
             </div>
           </div>
         </section>
-        <section class="main-brands">
+        <section class="container main-brands">
           <div class="main-brands__item">
             <a href="#">
               <img
@@ -395,7 +397,7 @@
             </a>
           </div>
         </section>
-        <section class="main-info">
+        <section class="container main-info">
           <div class="info__about-us">
             <h2 class="info__about-us--headline">О нас</h2>
             <p class="info__about-us--text">
@@ -419,8 +421,8 @@
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
               сможете проверить работоспособность покупки. Всякое бывает.
             </p>
-            <div class="info__contacts_map"></div>
-            <button class="btn">напишите нам</button>
+            <img src="img/map 1.jpg" width="560" height="222" class="info__contacts_map"></img>
+            <button class="btn btn-button">напишите нам</button>
           </div>
         </section>
       </div>
@@ -428,51 +430,44 @@
     <footer class="footer-main">
       <div class="container">
         <div class="footer-content">
-          <section class="footer-content__left">
-            <img
-              src="img/logo-6.png"
-              width="163"
-              height="35"
-              alt="Логотип"
-              title="Логотип"
-            />
-            <address class="footer-content__left--address">
+          <section class="footer-content__header">
+            <div class="footer-logo__box">
+              <img
+                src="img/logo-6.png"
+                width="163"
+                height="35"
+                alt="Логотип"
+                title="Логотип"
+              />
+            </div>
+            <div class="footer-user-block__box">
+              <ul class="footer-user-block__list">
+                <li class="footer-user-block__item">
+                  <a class="footer-user--nav" href="#">Войти</a>
+                </li>
+                <li class="footer-user-block__item">
+                  <a class="footer-user--nav" href="#">Сравнить</a>
+                </li>
+                <li class="footer-user-block__item">
+                  <a class="footer-user--nav" href="#">Корзина</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="footer-content__middle">
+            <address class="footer-content__middle--address">
               г. Москва, ул. Строителей, 15
             </address>
-          </section>
-          <section class="footer-content__center">
             <div class="footer-nav">
-              <ul>
-                <li><a class="footer-nav--list" href="#">доставка</a></li>
-                <li><a class="footer-nav--list" href="#">гарантия</a></li>
-                <li><a class="footer-nav--list" href="#">контакты</a></li>
-              </ul>
-            </div>
-            <div class="footer-social">
-              <ul>
-                <li><a href="">Фейсбук</a></li>
-                <li><a href="">Инстаграм</a></li>
-                <li><a href="">Твиттер</a></li>
-              </ul>
-            </div>
-          </section>
-          <section class="footer-content__right">
-            <div class="footer-user-block__box">
-              <ul>
-                <li>
-                  <a class="footer-user--nav" href=""
-                    ><img src="#" alt="Войти" title="Войти" /> Войти</a
-                  >
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a class="footer-nav--text" href="#">доставка</a>
                 </li>
-                <li>
-                  <a class="footer-user--nav" href=""
-                    ><img src="#" alt="Сравнить" title="Сравнить" /> Сравнить</a
-                  >
+                <li class="footer-nav__item">
+                  <a class="footer-nav--text" href="#">гарантия</a>
                 </li>
-                <li>
-                  <a class="footer-user--nav" href=""
-                    ><img src="#" alt="Корзина" title="Корзина" /> Корзина</a
-                  >
+                <li class="footer-nav__item">
+                  <a class="footer-nav--text" href="#">контакты</a>
                 </li>
               </ul>
             </div>
@@ -480,6 +475,45 @@
               <a class="tel--text" href="tel:74954959595"
                 >Тел.: +7 (495) 495-95-95</a
               >
+            </div>
+          </section>
+          <section class="footer-content__footer">
+            <div class="footer-social">
+              <ul class="footer-social__list">
+                <li class="footer-social__item">
+                  <a href="#"
+                    ><img
+                      src="img/simple-icons_facebook.svg"
+                      width="32"
+                      height="32"
+                      alt="Фейсбук"
+                      title="Фейсбук"
+                    />Фейсбук</a
+                  >
+                </li>
+                <li class="footer-social__item">
+                  <a href="#"
+                    ><img
+                      src="img/icon_instagram.svg"
+                      width="32"
+                      height="32"
+                      alt="Инстаграм"
+                      title="Инстаграм"
+                    />Инстаграм</a
+                  >
+                </li>
+                <li class="footer-social__item">
+                  <a href="#"
+                    ><img
+                      src="img/icon_witter.svg"
+                      width="32"
+                      height="32"
+                      alt="Твиттер"
+                      title="Твиттер"
+                    />Твиттер</a
+                  >
+                </li>
+              </ul>
             </div>
             <div class="html-logo">
               <a target="_blank" href="https://htmlacademy.ru/intensive/htmlcss"
