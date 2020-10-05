@@ -73,15 +73,19 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="container">
       <section class="main-head">
         <div class="main-head__wr">
           <h1 class="main-head--headline">Моноподы для селфи</h1>
           <div class="breadcrumbs">
-            <ul>
-              <li class="breadcrumbs--list"><a href="#">Главная</a></li>
-              <li class="breadcrumbs--list"><a href="#">Каталог товаров</a></li>
-              <li class="breadcrumbs--list">Моноподы для селфи</li>
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-list__item">
+                <a class="breadcrumbs-list__link" href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs-list__item">
+                <a class="breadcrumbs-list__link" href="#">Каталог товаров</a>
+              </li>
+              <li class="breadcrumbs-list__item">Моноподы для селфи</li>
             </ul>
           </div>
         </div>
@@ -96,7 +100,7 @@
           <div class="sorting-main">
             <div class="sorting-wr">
               <form method="get">
-                <fieldset>
+                <fieldset class="filter-fieldset">
                   <legend class="sorting-header--legend">Стоимость:</legend>
                   <div class="range-filter">
                     <div class="range-filter__controls">
@@ -128,9 +132,10 @@
                     </div>
                   </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-fieldset">
                   <legend class="sorting-header--legend">Цвет</legend>
                   <input
+                    class="checkbox-color"
                     type="checkbox"
                     id="black"
                     value="black"
@@ -141,6 +146,7 @@
                     >Чёрный</label
                   >
                   <input
+                    class="checkbox-color"
                     type="checkbox"
                     id="white"
                     value="white"
@@ -150,6 +156,7 @@
                     >Белый</label
                   >
                   <input
+                    class="checkbox-color"
                     type="checkbox"
                     id="blue"
                     value="blue"
@@ -158,6 +165,7 @@
                   />
                   <label class="sorting-checkbox--text" for="blue">Синий</label>
                   <input
+                    class="checkbox-color"
                     type="checkbox"
                     id="red"
                     value="red"
@@ -168,6 +176,7 @@
                     >Красный</label
                   >
                   <input
+                    class="checkbox-color"
                     type="checkbox"
                     id="pink"
                     value="pink"
@@ -177,9 +186,10 @@
                     >Розовый</label
                   >
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-fieldset">
                   <legend class="sorting-header--legend">Bluetooth</legend>
                   <input
+                    class="bluetooth-radio-status"
                     type="radio"
                     id="yes"
                     value="yes"
@@ -188,6 +198,7 @@
                   />
                   <label class="sorting-radio--text" for="yes">Есть</label>
                   <input
+                    class="bluetooth-radio-status"
                     type="radio"
                     id="no"
                     value="no"
@@ -195,7 +206,7 @@
                   />
                   <label class="sorting-radio--text" for="no">Нет</label>
                   <input
-                    class="btn btn-sorting"
+                    class="btn btn-filter"
                     type="submit"
                     value="Показать"
                     name="submit"
@@ -345,14 +356,14 @@
                   <button class="btn-catalog-sort">назад</button>
                 </div>
                 <div class="catalog-sort__pagination">
-                  <ul>
-                    <li class="catalog-sort__pagination--list">
+                  <ul class="catalog-sort__pagination--list">
+                    <li class="catalog-sort__pagination--item">
                       <a href="#"></a>1
                     </li>
-                    <li class="catalog-sort__pagination--list">
+                    <li class="catalog-sort__pagination--item">
                       <a href="#"></a>2
                     </li>
-                    <li class="catalog-sort__pagination--list">
+                    <li class="catalog-sort__pagination--item">
                       <a href="#"></a>3
                     </li>
                   </ul>
