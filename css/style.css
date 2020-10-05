@@ -942,6 +942,7 @@
   background: none;
   position: relative;
   border: none;
+  width: 200px;
 }
 
 .range-filter__price--text {
