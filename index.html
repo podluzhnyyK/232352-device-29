@@ -22,29 +22,36 @@
               /></a>
             </div>
             <div class="nav-top__form">
-              <form action="#" method="POST">
-                <input type="search" placeholder="Поиск по сайту" />
+              <form
+                class="main-header-search"
+                action="https://echo.htmlacademy.ru"
+                method="post"
+              >
+                <input
+                  class="search-input"
+                  type="text"
+                  name="search"
+                  id="search-field"
+                  placeholder="Поиск по сайту"
+                />
+                <button class="search-button" type="submit">
+                  <span>Найти</span>
+                </button>
               </form>
-              <button>найти</button>
             </div>
             <div class="nav-top__user-block">
               <div class="nav-top__user-block_check-in">
-                <a
-                  class="nav-top__user-block_checkIn-link nav-top--text"
-                  href="#"
-                >
-                  Войти</a
-                >
+                <a class="text__user_icon nav-top--text" href="#"> Войти</a>
               </div>
               <div class="nav-top__basket">
                 <ul class="nav-top__basket-list">
                   <li class="nav-top__basket-list--item">
-                    <a class="nav-top__basket_compare nav-top--text" href="#">
+                    <a class="text__compare_icon nav-top--text" href="#">
                       Сравнить</a
                     >
                   </li>
                   <li class="nav-top__basket-list--item">
-                    <a class="nav-top__basket_basket nav-top--text" href="#">
+                    <a class="text__basket_icon nav-top--text" href="#">
                       Корзина</a
                     >
                   </li>
@@ -55,6 +62,40 @@
           <div class="nav-down">
             <div class="nav-down__catalog">
               <a href="#" class="nav-down--text">каталог товаров</a>
+            </div>
+            <div class="dropdown-catalog-menu">
+              <ul class="main-catalog-menu-list">
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#">
+                    Виртуальная реальность
+                  </a>
+                </li>
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#">
+                    Моноподы для селфи
+                  </a>
+                </li>
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#"> Экшн-камеры </a>
+                </li>
+              </ul>
+              <ul class="main-catalog-menu-list">
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#">
+                    Фитнес‑браслеты
+                  </a>
+                </li>
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#"> Умные часы </a>
+                </li>
+              </ul>
+              <ul class="main-catalog-menu-list">
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#">
+                    Квадрокоптеры
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="nav-down__menu">
               <ul class="nav-down__menu-list">
@@ -70,38 +111,6 @@
               </ul>
             </div>
           </div>
-          <div class="dropdown-catalog-menu">
-            <ul class="main-catalog-menu-list">
-              <li class="main-catalog-item">
-                <a class="main-catalog-item--link" href="#">
-                  Виртуальная реальность
-                </a>
-              </li>
-              <li class="main-catalog-item">
-                <a class="main-catalog-item--link" href="#">
-                  Моноподы для селфи
-                </a>
-              </li>
-              <li class="main-catalog-item">
-                <a class="main-catalog-item--link" href="#"> Экшн-камеры </a>
-              </li>
-            </ul>
-            <ul class="main-catalog-menu-list">
-              <li class="main-catalog-item">
-                <a class="main-catalog-item--link" href="#">
-                  Фитнес‑браслеты
-                </a>
-              </li>
-              <li class="main-catalog-item">
-                <a class="main-catalog-item--link" href="#"> Умные часы </a>
-              </li>
-            </ul>
-            <ul class="main-catalog-menu-list">
-              <li class="main-catalog-item">
-                <a class="main-catalog-item--link" href="#"> Квадрокоптеры </a>
-              </li>
-            </ul>
-          </div>
         </nav>
       </div>
     </header>
@@ -109,12 +118,27 @@
       <div class="grid-column">
         <section class="container slider">
           <div class="slider__controls">
-            <div class="slider__controls_controls"></div>
-            <input type="radio" id="btn-1" name="toggle-slider" checked />
-            <input type="radio" id="btn-2" name="toggle-slider" />
-            <input type="radio" id="btn-3" name="toggle-slider" />
+            <input
+              class="slider__controls-item"
+              type="radio"
+              id="btn-1"
+              name="toggle-slider"
+              checked
+            />
             <label for="btn-1"></label>
+            <input
+              class="slider__controls-item"
+              type="radio"
+              id="btn-2"
+              name="toggle-slider"
+            />
             <label for="btn-2"></label>
+            <input
+              class="slider__controls-item"
+              type="radio"
+              id="btn-3"
+              name="toggle-slider"
+            />
             <label for="btn-3"></label>
           </div>
           <div class="slider__item">
@@ -131,10 +155,11 @@
               </div>
               <div class="slider__content_text">
                 <h2 class="slider__content_text--headline">
-                  Делай селфи, как Бен Стиллер!
+                  Делай селфи,<br />
+                  как Бен Стиллер!
                 </h2>
                 <p class="slider__content_text--text">
-                  Самая длинная палка для селфи доступна в нашем магазине.
+                  Самая длинная палка для селфи доступна в нашем магазине.<br />
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5
                   килограмм.
                 </p>
@@ -203,8 +228,9 @@
         </section>
         <section class="container main__catalog">
           <article class="main__catalog_item">
-            <div class="main__catalog_img">
+            <div class="main__catalog_box">
               <img
+                class="main__catalog_img"
                 src="img/popular-1.png"
                 alt="Виртуальная реальность"
                 title="Виртуальная реальность"
@@ -221,8 +247,9 @@
             </div>
           </article>
           <article class="main__catalog_item">
-            <div class="main__catalog_img">
+            <div class="main__catalog_box">
               <img
+                class="main__catalog_img"
                 src="img/popular-2.png"
                 alt="Моноподы для селфи"
                 title="Моноподы для селфи"
@@ -233,14 +260,16 @@
             <div class="main__catalog_text">
               <h3>
                 <a class="main__catalog_text-headline" href="catalog.html"
-                  >Моноподы для селфи</a
+                  >Моноподы<br />
+                  для селфи</a
                 >
               </h3>
             </div>
           </article>
           <article class="main__catalog_item">
-            <div class="main__catalog_img">
+            <div class="main__catalog_box">
               <img
+                class="main__catalog_img"
                 src="img/popular-3.png"
                 alt="Экшн-камеры"
                 title="Экшн-камеры"
@@ -257,8 +286,9 @@
             </div>
           </article>
           <article class="main__catalog_item">
-            <div class="main__catalog_img">
+            <div class="main__catalog_box">
               <img
+                class="main__catalog_img"
                 src="img/popular-4.png"
                 alt="Фитнес-браслеты"
                 title="Фитнес-браслеты"
@@ -268,15 +298,18 @@
             </div>
             <div class="main__catalog_text">
               <h3>
-                <a class="main__catalog_text-headline" href="catalog.html"
+                <a
+                  class="main__catalog_text-headline letter-spacing"
+                  href="catalog.html"
                   >Фитнес-браслеты</a
                 >
               </h3>
             </div>
           </article>
           <article class="main__catalog_item">
-            <div class="main__catalog_img">
+            <div class="main__catalog_box">
               <img
+                class="main__catalog_img"
                 src="img/popular-5.png"
                 alt="Умные часы"
                 title="Умные часы"
@@ -293,8 +326,9 @@
             </div>
           </article>
           <article class="main__catalog_item">
-            <div class="main__catalog_img">
+            <div class="main__catalog_box">
               <img
+                class="main__catalog_img"
                 src="img/popular-6.png"
                 alt="Квадрокоптеры"
                 title="Квадрокоптеры"
@@ -435,17 +469,17 @@
           <div class="info__about-us">
             <h2 class="info__about-us--headline">О нас</h2>
             <p class="info__about-us--text">
-              Огромный выбор гаджетов не оставит равнодушным гика, который есть
-              в каждом из нас.
+              Огромный выбор гаджетов не оставит равнодушным гика,<br />
+              который есть в каждом из нас.
             </p>
             <p class="info__about-us--text">
-              Мы можем доставить ваш товар в самые отдаленные точки России!
-              DEVICE работает со многими транспортными компаниями:
+              Мы можем доставить ваш товар в самые отдаленные точки<br />
+              России! DEVICE работает со многими транспортными компаниями:
             </p>
-            <ul>
-              <li class="info__about-us--list">Деловые линии</li>
-              <li class="info__about-us--list">Автотрейдинг</li>
-              <li class="info__about-us--list">ЖелДорЭкспедиция</li>
+            <ul class="info__about-us--list">
+              <li class="info__about-us--item">Деловые линии</li>
+              <li class="info__about-us--item">Автотрейдинг</li>
+              <li class="info__about-us--item">ЖелДорЭкспедиция</li>
             </ul>
             <a class="btn" href="#">подробнее о нас</a>
           </div>
@@ -484,13 +518,19 @@
             <div class="footer-user-block__box">
               <ul class="footer-user-block__list">
                 <li class="footer-user-block__item">
-                  <a class="footer-user--nav" href="#">Войти</a>
+                  <a class="text__user_icon-footer footer-user--nav" href="#"
+                    >Войти</a
+                  >
                 </li>
                 <li class="footer-user-block__item">
-                  <a class="footer-user--nav" href="#">Сравнить</a>
+                  <a class="text__compare_icon-footer footer-user--nav" href="#"
+                    >Сравнить</a
+                  >
                 </li>
                 <li class="footer-user-block__item">
-                  <a class="footer-user--nav" href="#">Корзина</a>
+                  <a class="text__basket_icon-footer footer-user--nav" href="#"
+                    >Корзина</a
+                  >
                 </li>
               </ul>
             </div>
@@ -524,7 +564,7 @@
                 <li class="footer-social__item">
                   <a href="#"
                     ><img
-                      src="img/simple-icons_facebook.svg"
+                      src="img/icon_facebook.svg"
                       width="32"
                       height="32"
                       alt="Фейсбук"
@@ -570,5 +610,60 @@
         </div>
       </div>
     </footer>
+    <section class="popup">
+      <form
+        class="write-us-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <p class="write-us-item">
+          <label for="name-field"> Ваше имя:</label>
+          <input
+            class="name-field"
+            type="text"
+            name="name"
+            id="name-field"
+            placeholder="Имя Фамилия"
+          />
+        </p>
+        <p class="write-us-item">
+          <label for="email-field">Ваш e-mail:</label>
+          <input
+            class="email-field invalid-value"
+            type="email"
+            name="email"
+            id="email-field"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="email@example.ru"
+          />
+        </p>
+        <p class="write-us-item">
+          <label for="comment-field">Текст письма:</label>
+          <textarea
+            class="comment-field"
+            name="text"
+            id="comment-field"
+            placeholder="В свободной форме"
+          ></textarea>
+        </p>
+        <button class="btn btn-button btn-popup" type="submit">
+          <span>Отправить</span>
+        </button>
+      </form>
+      <button class="mail-box__content-close" type="button">Закрыть</button>
+    </section>
+    <section class="map-popup">
+      <iframe
+        id="modal_window_map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473672!2d37.527429316044476!3d55.6870340045298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1593473712335!5m2!1sru!2sru"
+        width="994"
+        height="593"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      >
+      </iframe>
+      <button class="mail-box__content-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
