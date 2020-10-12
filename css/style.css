@@ -687,7 +687,7 @@ a {
   padding-left: 19px;
   width: 104%;
   color: var(--special-yellow);
-  justify-content: end;
+  justify-content: start;
 }
 
 .advantage__sort-radio:checked + .btn::before {
@@ -1006,7 +1006,7 @@ a {
 .footer-content__footer {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
   min-height: 108px;
 }
 
