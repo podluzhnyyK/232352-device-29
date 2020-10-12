@@ -55,6 +55,10 @@
   --popup-field-color: #f2f2f2;
 }
 
+a {
+  text-decoration: none;
+}
+
 .page {
   height: 100%;
 }
@@ -66,6 +70,11 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   overflow-x: hidden;
+  color: var(--basic-black);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 .container {
@@ -93,7 +102,7 @@
 }
 
 .btn:active {
-  color: rgb(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .btn-button {
@@ -136,7 +145,7 @@
 
 .main-header-search::before {
   content: " ";
-  background-image: url("../img/icon_search.png");
+  background-image: url("../img/icon_search.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
@@ -209,11 +218,11 @@
 
 .search-button:hover {
   background-color: var(--basic-black);
-  color: rgba(255, 255, 255);
+  color: rgb(255, 255, 255);
   visibility: visible;
 }
 
-.search-button span:active {
+.search-button:active span {
   opacity: 0.3;
   visibility: visible;
 }
@@ -233,7 +242,7 @@
 
 .nav-top__logo {
   position: absolute;
-  bottom: 61px;
+  bottom: 60px;
 }
 
 .nav-top__logo:hover {
@@ -264,6 +273,7 @@
   font-size: 15px;
   line-height: 20px;
   font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   color: var(--basic-black);
   text-decoration: none;
   padding-left: 25px;
@@ -289,7 +299,7 @@
 .text__basket_icon::before {
   content: "";
   position: absolute;
-  background-image: url(../img/icon_cart.png);
+  background-image: url(../img/icon_cart.svg);
   width: 10px;
   height: 10px;
   left: 5px;
@@ -299,7 +309,7 @@
 .text__compare_icon::before {
   content: "";
   position: absolute;
-  background-image: url(../img/icon_chart.png);
+  background-image: url(../img/icon_chart.svg);
   width: 14px;
   height: 14px;
   left: 0px;
@@ -309,7 +319,7 @@
 .text__user_icon::before {
   content: "";
   position: absolute;
-  background-image: url(../img/icon_user.png);
+  background-image: url(../img/icon_user.svg);
   width: 14px;
   height: 14px;
   left: 0px;
@@ -317,7 +327,7 @@
 }
 
 .nav-top__basket-list--item {
-  margin-right: 36px;
+  margin-right: 40px;
 }
 
 .nav-top__basket-list--item:last-child {
@@ -389,7 +399,7 @@
 
 .nav-down__catalog::before {
   content: " ";
-  background-image: url("../img/icon_plus.png");
+  background-image: url("../img/icon_plus.svg");
   width: 22px;
   height: 22px;
   position: absolute;
@@ -451,18 +461,22 @@
 .slider {
   position: relative;
   top: -130px;
-  margin-bottom: -21px;
+  margin-bottom: -19px;
 }
 
 .slider__item {
   display: grid;
-  grid-template-columns: 531px 1fr;
+  grid-template-columns: 512px 1fr;
+}
+
+.slider__hidden {
+  display: none;
 }
 
 .slider__controls {
   position: absolute;
-  right: 0px;
-  top: 339px;
+  right: -18px;
+  top: 340px;
   z-index: 1;
 }
 
@@ -502,10 +516,6 @@
   border: 1px solid var(--basic-black);
 }
 
-.slider__img {
-  padding-left: 20px;
-}
-
 .slider__content {
   position: relative;
   padding-top: 54px;
@@ -523,8 +533,8 @@
 
 .slider__content_number {
   position: absolute;
-  right: -22px;
-  top: -18px;
+  right: -41px;
+  top: -17px;
 }
 
 .slider__content_number--text {
@@ -733,6 +743,10 @@
   background-position: 100% 71px;
 }
 
+.advantage__hidden {
+  display: none;
+}
+
 /*main-brands*/
 
 .main-brands {
@@ -855,6 +869,7 @@
 }
 
 .info__contacts_map {
+  display: block;
   margin-bottom: 72px;
 }
 
@@ -922,7 +937,7 @@
 .text__basket_icon-footer::before {
   content: "";
   position: absolute;
-  background-image: url(../img/icon_cart-footer.png);
+  background-image: url(../img/icon_cart-footer.svg);
   width: 10px;
   height: 10px;
   left: 0px;
@@ -933,7 +948,7 @@
 .text__compare_icon-footer::before {
   content: "";
   position: absolute;
-  background-image: url(../img/icon_chart-footer.png);
+  background-image: url(../img/icon_chart-footer.svg);
   width: 14px;
   height: 14px;
   left: 0px;
@@ -944,7 +959,7 @@
 .text__user_icon-footer::before {
   content: "";
   position: absolute;
-  background-image: url(../img/icon_user-footer.png);
+  background-image: url(../img/icon_user-footer.svg);
   width: 14px;
   height: 14px;
   left: 0px;
