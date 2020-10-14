@@ -68,7 +68,41 @@
           </div>
           <div class="nav-down">
             <div class="nav-down__catalog">
-              <a class="nav-down--text" href="#">каталог товаров</a>
+              <a class="nav-down--text nav-down--text-catalog" href="#">каталог товаров</a>
+            </div>
+            <div class="dropdown-catalog-menu dropdown-catalog-menu--catalog">
+              <ul class="main-catalog-menu-list">
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#">
+                    Виртуальная реальность
+                  </a>
+                </li>
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#">
+                    Моноподы для селфи
+                  </a>
+                </li>
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#"> Экшн-камеры </a>
+                </li>
+              </ul>
+              <ul class="main-catalog-menu-list">
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#">
+                    Фитнес‑браслеты
+                  </a>
+                </li>
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#"> Умные часы </a>
+                </li>
+              </ul>
+              <ul class="main-catalog-menu-list">
+                <li class="main-catalog-item">
+                  <a class="main-catalog-item--link" href="#">
+                    Квадрокоптеры
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="nav-down__menu">
               <ul class="nav-down__menu-list">
@@ -156,6 +190,7 @@
                 </fieldset>
                 <fieldset class="filter-fieldset">
                   <legend class="sorting-header--legend">Цвет</legend>
+                  <div class="checkbox-color__box">
                   <input
                     class="checkbox-color"
                     type="checkbox"
@@ -207,9 +242,11 @@
                   <label class="sorting-checkbox--text" for="pink"
                     >Розовый</label
                   >
+                  </div>
                 </fieldset>
                 <fieldset class="filter-fieldset">
                   <legend class="sorting-header--legend">Bluetooth</legend>
+                  <div class="bluetooth-radio__box">
                   <input
                     class="bluetooth-radio-status"
                     type="radio"
@@ -227,6 +264,7 @@
                     name="product-groups"
                   />
                   <label class="sorting-radio--text" for="no">Нет</label>
+                  </div>
                   <button class="btn btn-filter" name="submit">показать</button>
                 </fieldset>
               </form>
@@ -276,15 +314,15 @@
                       <span class="catalog-group__new--text">new</span>
                     </div>
                     <div class="catalog-group__head--hover">
-                      <a class="btn" href="">в корзину</a>
+                      <a href="#" class="btn btn-buy">в корзину</a>
                       <button class="btn-add-comparison">
                         Добавить к сравнению
                       </button>
                     </div>
                   </div>
                   <div class="catalog-group__text">
-                    <span class="catalog-group__text--name"
-                      >Любительская селфи-палка</span
+                    <a href="#" class="catalog-group__text--name"
+                      >Любительская селфи-палка</a
                     >
                     <span class="catalog-group__text--price">500 руб.</span>
                   </div>
@@ -304,15 +342,15 @@
                       <span class="catalog-group__new--text">new</span>
                     </div>
                     <div class="catalog-group__head--hover">
-                      <a class="btn" href="">в корзину</a>
+                      <a class="btn btn-buy" href="">в корзину</a>
                       <button class="btn-add-comparison">
                         Добавить к сравнению
                       </button>
                     </div>
                   </div>
                   <div class="catalog-group__text">
-                    <span class="catalog-group__text--name"
-                      >Профессиональная селфи-палка</span
+                    <a href="#" class="catalog-group__text--name"
+                      >Профессиональная<br> селфи-палка</a
                     >
                     <span class="catalog-group__text--price">1500 руб.</span>
                   </div>
@@ -332,15 +370,15 @@
                       <span class="catalog-group__new--text">new</span>
                     </div>
                     <div class="catalog-group__head--hover">
-                      <a class="btn" href="">в корзину</a>
+                      <a class="btn btn-buy" href="">в корзину</a>
                       <button class="btn-add-comparison">
                         Добавить к сравнению
                       </button>
                     </div>
                   </div>
                   <div class="catalog-group__text">
-                    <span class="catalog-group__text--name"
-                      >Непотопляемая селфи-палка</span
+                    <a href="#" class="catalog-group__text--name"
+                      >Непотопляемая селфи-палка</a
                     >
                     <span class="catalog-group__text--price">2500 руб.</span>
                   </div>
@@ -360,15 +398,15 @@
                       <span class="catalog-group__new--text">new</span>
                     </div>
                     <div class="catalog-group__head--hover">
-                      <a class="btn" href="">в корзину</a>
+                      <a class="btn btn-buy" href="">в корзину</a>
                       <button class="btn-add-comparison">
                         Добавить к сравнению
                       </button>
                     </div>
                   </div>
                   <div class="catalog-group__text">
-                    <span class="catalog-group__text--name"
-                      >Селфи-палка «Следуй за мной»</span
+                    <a href="#" class="catalog-group__text--name"
+                      >Селфи-палка «Следуй за<br> мной»</a
                     >
                     <span class="catalog-group__text--price">4900 руб.</span>
                   </div>
@@ -402,7 +440,7 @@
         </section>
       </div>
     </main>
-    <footer class="footer-main">
+    <footer class="footer-main footer-main__catalog">
       <div class="container">
         <div class="footer-content">
           <section class="footer-content__header">
@@ -502,7 +540,7 @@
             <div class="html-logo">
               <a target="_blank" href="https://htmlacademy.ru/intensive/htmlcss"
                 ><img
-                  src="img/logo-html.png"
+                  src="img/logo-html.svg"
                   alt="html-academy"
                   title="html-academy"
                   width="27"
