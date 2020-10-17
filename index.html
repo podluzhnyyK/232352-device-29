@@ -1,688 +1,483 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="page-body">
-    <header class="main-header">
-      <div class="container">
-        <nav class="main-nav">
-          <div class="nav-top">
-            <div class="nav-top__logo">
-              <a href="#"
-                ><img
-                  src="img/logo-7.png"
-                  width="163"
-                  height="35"
-                  alt="Логотип"
-                  title="Логотип"
-              /></a>
-            </div>
-            <div class="nav-top__form">
-              <form
-                class="main-header-search"
-                action="https://echo.htmlacademy.ru"
-                method="post"
-              >
-                <input
-                  class="search-input"
-                  type="text"
-                  name="search"
-                  id="search-field"
-                  placeholder="Поиск по сайту"
-                />
-                <button class="search-button" type="submit">
-                  <span>Найти</span>
-                </button>
-              </form>
-            </div>
-            <div class="nav-top__user-block">
-              <div class="nav-top__user-block_check-in">
-                <a class="text__user_icon nav-top--text" href="#"> Войти</a>
-              </div>
-              <div class="nav-top__basket">
-                <ul class="nav-top__basket-list">
-                  <li class="nav-top__basket-list--item">
-                    <a class="text__compare_icon nav-top--text" href="#">
-                      Сравнить</a
-                    >
-                  </li>
-                  <li class="nav-top__basket-list--item">
-                    <a class="text__basket_icon nav-top--text" href="#">
-                      Корзина</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
+
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/minstyle.css" />
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-nav">
+        <div class="nav-top">
+          <div class="nav-top__logo">
+            <img src="img/logo-7.png" width="163" height="35" alt="Логотип" title="Логотип" />
           </div>
-          <div class="nav-down">
-            <div class="nav-down__catalog">
-              <a href="#" class="nav-down--text__dropdown">каталог товаров</a>
+          <div class="nav-top__form">
+            <form class="main-header-search" action="https://echo.htmlacademy.ru" method="post">
+              <label class="search-label-input" for="search-field">Поиск по сайту</label>
+              <input class="search-input" type="text" name="search" id="search-field" placeholder="Поиск по сайту" />
+              <button class="search-button" type="submit">
+                <span>Найти</span>
+              </button>
+            </form>
+          </div>
+          <div class="nav-top__user-block">
+            <div class="nav-top__user-block_check-in">
+              <a class="text__user_icon nav-top--text" href="#"> Войти</a>
             </div>
-            <div class="dropdown-catalog-menu">
-              <ul class="main-catalog-menu-list">
-                <li class="main-catalog-item">
-                  <a class="main-catalog-item--link" href="#">
-                    Виртуальная реальность
-                  </a>
+            <div class="nav-top__basket">
+              <ul class="nav-top__basket-list">
+                <li class="nav-top__basket-list--item">
+                  <a class="text__compare_icon nav-top--text" href="#">
+                    Сравнить</a>
                 </li>
-                <li class="main-catalog-item">
-                  <a class="main-catalog-item--link" href="#">
-                    Моноподы для селфи
-                  </a>
-                </li>
-                <li class="main-catalog-item">
-                  <a class="main-catalog-item--link" href="#"> Экшн-камеры </a>
-                </li>
-              </ul>
-              <ul class="main-catalog-menu-list">
-                <li class="main-catalog-item">
-                  <a class="main-catalog-item--link" href="#">
-                    Фитнес‑браслеты
-                  </a>
-                </li>
-                <li class="main-catalog-item">
-                  <a class="main-catalog-item--link" href="#"> Умные часы </a>
-                </li>
-              </ul>
-              <ul class="main-catalog-menu-list">
-                <li class="main-catalog-item">
-                  <a class="main-catalog-item--link" href="#">
-                    Квадрокоптер
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="nav-down__menu">
-              <ul class="nav-down__menu-list">
-                <li class="nav-down__menu-item">
-                  <a href="#" class="nav-down--text">доставка</a>
-                </li>
-                <li class="nav-down__menu-item">
-                  <a href="#" class="nav-down--text">гарантия</a>
-                </li>
-                <li class="nav-down__menu-item">
-                  <a href="#" class="nav-down--text">контакты</a>
+                <li class="nav-top__basket-list--item">
+                  <a class="text__basket_icon nav-top--text" href="#">
+                    Корзина</a>
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="grid-column">
-        <section class="container slider">
-          <div class="slider__controls">
-            <input
-              class="slider__controls-item"
-              type="radio"
-              id="btn-1"
-              name="toggle-slider"
-              checked
-            />
-            <label for="btn-1"></label>
-            <input
-              class="slider__controls-item"
-              type="radio"
-              id="btn-2"
-              name="toggle-slider"
-            />
-            <label for="btn-2"></label>
-            <input
-              class="slider__controls-item"
-              type="radio"
-              id="btn-3"
-              name="toggle-slider"
-            />
-            <label for="btn-3"></label>
-          </div>
-          <div class="slider__item">
-            <div class="slider__img">
-              <img
-                src="img/slider-1-1.png"
-                alt="палка для селфи"
-                title="палка для селфи"
-              />
-            </div>
-            <div class="slider__content">
-              <div class="slider__content_number">
-                <p class="slider__content_number--text">01</p>
-              </div>
-              <div class="slider__content_text">
-                <h2 class="slider__content_text--headline">
-                  Делай селфи,<br />
-                  как Бен Стиллер!
-                </h2>
-                <p class="slider__content_text--text">
-                  Самая длинная палка для селфи доступна в нашем магазине.<br />
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5
-                  килограмм.
-                </p>
-              </div>
-              <div class="slider__button">
-                <a class="btn btn-slider" href="#">подробнее</a>
-              </div>
-              <table class="slider__feature">
-                <tr>
-                  <th class="slider__feature-th">8,5 м</th>
-                  <th class="slider__feature-th">5 кг</th>
-                  <th class="slider__feature-th">Карбон</th>
-                </tr>
-                <tr>
-                  <td class="slider__feature-td">Длина палки</td>
-                  <td class="slider__feature-td">Вес палки</td>
-                  <td class="slider__feature-td">Материал</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="slider__item slider__hidden">
-            <div class="slider__img">
-              <img
-                src="img/slider-2-1.png"
-                alt="палка для селфи"
-                title="палка для селфи"
-              />
-            </div>
-            <div class="slider__content">
-              <div class="slider__content_number">
-                <p class="slider__content_number--text">02</p>
-              </div>
-              <div class="slider__content_text">
-                <h2 class="slider__content_text--headline">
-                  Худеем правильно!
-                </h2>
-                <p class="slider__content_text--text">
-                  Мотивирующие фитнес-браслеты помогут найти в себе силы не
-                  пропускать занятия и соблюдать диету.
-                </p>
-              </div>
-              <div class="slider__button">
-                <a class="btn btn-slider" href="#">подробнее</a>
-              </div>
-              <table class="slider__feature">
-                <tr>
-                  <th class="slider__feature-th">48 часов</th>
-                </tr>
-                <tr>
-                  <td class="slider__feature-td">Без подзарядки</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="slider__item slider__hidden">
-            <div class="slider__img">
-              <img
-                src="img/slider-3-1.png"
-                alt="палка для селфи"
-                title="палка для селфи"
-              />
-            </div>
-            <div class="slider__content">
-              <div class="slider__content_number">
-                <p class="slider__content_number--text">03</p>
-              </div>
-              <div class="slider__content_text">
-                <h2 class="slider__content_text--headline">
-                  Порхает как бабочка, жалит как пчела!
-                </h2>
-                <p class="slider__content_text--text">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-                  лазером, замаскированным под стандартную камеру.
-                </p>
-              </div>
-              <div class="slider__button">
-                <a class="btn btn-slider" href="#">подробнее</a>
-              </div>
-              <table class="slider__feature">
-                <tr>
-                  <th class="slider__feature-th">800 м</th>
-                  <th class="slider__feature-th">50 м</th>
-                </tr>
-                <tr>
-                  <td class="slider__feature-td">Дальность полета</td>
-                  <td class="slider__feature-td">Радиус поражения</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </section>
-        <section class="container main__catalog">
-          <article class="main__catalog_item">
-            <a href="catalog.html">
-              <div class="main__catalog_box">
-                <img
-                  class="main__catalog_img"
-                  src="img/popular-1.png"
-                  alt="Виртуальная реальность"
-                  title="Виртуальная реальность"
-                  width="97"
-                  height="55"
-                />
-              </div>
-              <div class="main__catalog_text">
-                <h3 class="main__catalog_text-headline">
-                  Виртуальная реальность
-                </h3>
-              </div>
-            </a>
-          </article>
-          <article class="main__catalog_item">
-            <a href="catalog.html">
-              <div class="main__catalog_box">
-                <img
-                  class="main__catalog_img"
-                  src="img/popular-2.png"
-                  alt="Моноподы для селфи"
-                  title="Моноподы для селфи"
-                  width="86"
-                  height="117"
-                />
-              </div>
-              <div class="main__catalog_text">
-                <h3 class="main__catalog_text-headline">
-                  Моноподы<br />
-                  для селфи
-                </h3>
-              </div>
-            </a>
-          </article>
-          <article class="main__catalog_item">
-            <a href="catalog.html">
-              <div class="main__catalog_box">
-                <img
-                  class="main__catalog_img"
-                  src="img/popular-3.png"
-                  alt="Экшн-камеры"
-                  title="Экшн-камеры"
-                  width="71"
-                  height="87"
-                />
-              </div>
-              <div class="main__catalog_text">
-                <h3 class="main__catalog_text-headline">Экшн-камеры</h3>
-              </div>
-            </a>
-          </article>
-          <article class="main__catalog_item">
-            <a href="catalog.html">
-              <div class="main__catalog_box">
-                <img
-                  class="main__catalog_img"
-                  src="img/popular-4.png"
-                  alt="Фитнес-браслеты"
-                  title="Фитнес-браслеты"
-                  width="107"
-                  height="65"
-                />
-              </div>
-              <div class="main__catalog_text">
-                <h3 class="main__catalog_text-headline letter-spacing">
-                  Фитнес-браслеты
-                </h3>
-              </div>
-            </a>
-          </article>
-          <article class="main__catalog_item">
-            <a href="catalog.html">
-              <div class="main__catalog_box">
-                <img
-                  class="main__catalog_img"
-                  src="img/popular-5.png"
-                  alt="Умные часы"
-                  title="Умные часы"
-                  width="56"
-                  height="98"
-                />
-              </div>
-              <div class="main__catalog_text">
-                <h3 class="main__catalog_text-headline">Умные часы</h3>
-              </div>
-            </a>
-          </article>
-          <article class="main__catalog_item">
-            <a href="catalog.html">
-              <div class="main__catalog_box">
-                <img
-                  class="main__catalog_img"
-                  src="img/popular-6.png"
-                  alt="Квадрокоптеры"
-                  title="Квадрокоптеры"
-                  width="132"
-                  height="69"
-                />
-              </div>
-              <div class="main__catalog_text">
-                <h3 class="main__catalog_text-headline">Квадрокоптеры</h3>
-              </div>
-            </a>
-          </article>
-        </section>
-        <section class="main__advantage">
-          <div class="container main__advantage_box">
-            <div class="advantage__sort">
-              <ul class="advantage__sort-list">
-                <li class="advantage__sort-item">
-                  <input
-                    class="advantage__sort-radio"
-                    type="radio"
-                    id="btn__advantage-1"
-                    name="toggle"
-                    checked
-                  />
-                  <label
-                    class="btn btn-advantage advantage__sort--label"
-                    for="btn__advantage-1"
-                    >доставка</label
-                  >
-                </li>
-                <li class="advantage__sort-item">
-                  <input
-                    class="advantage__sort-radio"
-                    type="radio"
-                    id="btn__advantage-2"
-                    name="toggle"
-                  />
-                  <label
-                    class="btn btn-advantage advantage__sort--label"
-                    for="btn__advantage-2"
-                    >гарантия</label
-                  >
-                </li>
-                <li class="advantage__sort-item">
-                  <input
-                    class="advantage__sort-radio"
-                    type="radio"
-                    id="btn__advantage-3"
-                    name="toggle"
-                  />
-                  <label
-                    class="btn btn-advantage advantage__sort--label"
-                    for="btn__advantage-3"
-                    >кредит</label
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="advantage__content">
-              <div class="advantage__content_item">
-                <h2 class="advantage__content_item--headline">Доставка</h2>
-                <p class="advantage__content_item--text">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж.
-                </p>
-              </div>
-              <div class="advantage__content_item advantage__hidden">
-                <h2 class="advantage__content_item--headline">Гарантия</h2>
-                <p class="advantage__content_item--text">
-                  Если из-за возгорания купленного у нас товара у вас сгорит дом
-                  — не переживайте, мы выдадим вам новый. Товар, не дом, конечно
-                  же.
-                </p>
-              </div>
-              <div class="advantage__content_item advantage__hidden">
-                <h2 class="advantage__content_item--headline">Кредит</h2>
-                <p class="advantage__content_item--text">
-                  Залезть в долговую яму стало проще! Кредитные консультанты
-                  подберут для вас наиболее выгодные условия кредита. Выгодные
-                  для нашего банка, разумеется.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="container main-brands">
-          <div class="main-brands__item">
-            <a href="#">
-              <img
-                src="img/logo-1.png"
-                alt="brand"
-                title="brand"
-                width="260"
-                height="100"
-              />
-            </a>
-          </div>
-          <div class="main-brands__item">
-            <a href="#">
-              <img
-                src="img/logo-2.png"
-                alt="brand"
-                title="brand"
-                width="260"
-                height="100"
-              />
-            </a>
-          </div>
-          <div class="main-brands__item">
-            <a href="#">
-              <img
-                src="img/logo-3.png"
-                alt="brand"
-                title="brand"
-                width="260"
-                height="100"
-              />
-            </a>
-          </div>
-          <div class="main-brands__item">
-            <a href="#">
-              <img
-                src="img/logo-4.png"
-                alt="brand"
-                title="brand"
-                width="260"
-                height="100"
-              />
-            </a>
-          </div>
-        </section>
-        <section class="container main-info">
-          <div class="info__about-us">
-            <h2 class="info__about-us--headline">О нас</h2>
-            <p class="info__about-us--text">
-              Огромный выбор гаджетов не оставит равнодушным гика,<br />
-              который есть в каждом из нас.
-            </p>
-            <p class="info__about-us--text">
-              Мы можем доставить ваш товар в самые отдаленные точки<br />
-              России! DEVICE работает со многими транспортными компаниями:
-            </p>
-            <ul class="info__about-us--list">
-              <li class="info__about-us--item">Деловые линии</li>
-              <li class="info__about-us--item">Автотрейдинг</li>
-              <li class="info__about-us--item">ЖелДорЭкспедиция</li>
-            </ul>
-            <a class="btn" href="#">подробнее о нас</a>
-          </div>
-          <div class="info__contacts">
-            <h2 class="info__contacts--headline">Контакты</h2>
-            <p class="info__contacts--text">
-              Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
-              сможете проверить работоспособность покупки. Всякое бывает.
-            </p>
-            <a href="#" class="info__contacts_map">
-              <img
-                src="img/map-1.jpg"
-                alt="Карта"
-                title="Карта"
-                width="560"
-                height="222"
-              />
-            </a>
-            <button class="btn btn-button">напишите нам</button>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="footer-main">
-      <div class="container">
-        <div class="footer-content">
-          <section class="footer-content__header">
-            <div class="footer-logo__box">
-              <img
-                src="img/logo-6.png"
-                width="163"
-                height="35"
-                alt="Логотип"
-                title="Логотип"
-              />
-            </div>
-            <div class="footer-user-block__box">
-              <ul class="footer-user-block__list">
-                <li class="footer-user-block__item">
-                  <a class="text__user_icon-footer footer-user--nav" href="#"
-                    >Войти</a
-                  >
-                </li>
-                <li class="footer-user-block__item">
-                  <a class="text__compare_icon-footer footer-user--nav" href="#"
-                    >Сравнить</a
-                  >
-                </li>
-                <li class="footer-user-block__item">
-                  <a class="text__basket_icon-footer footer-user--nav" href="#"
-                    >Корзина</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="footer-content__middle">
-            <address class="footer-content__middle--address">
-              г. Москва, ул. Строителей, 15
-            </address>
-            <div class="footer-nav">
-              <ul class="footer-nav__list">
-                <li class="footer-nav__item">
-                  <a class="footer-nav--text" href="#">доставка</a>
-                </li>
-                <li class="footer-nav__item">
-                  <a class="footer-nav--text" href="#">гарантия</a>
-                </li>
-                <li class="footer-nav__item">
-                  <a class="footer-nav--text" href="#">контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="tel">
-              <a class="tel--text" href="tel:74954959595"
-                >Тел.: +7 (495) 495-95-95</a
-              >
-            </div>
-          </section>
-          <section class="footer-content__footer">
-            <div class="footer-social">
-              <ul class="footer-social__list">
-                <li class="footer-social__item">
-                  <a href="#"
-                    ><img
-                      src="img/icon_facebook.svg"
-                      width="32"
-                      height="32"
-                      alt="Фейсбук"
-                      title="Фейсбук"
-                    />Фейсбук</a
-                  >
-                </li>
-                <li class="footer-social__item">
-                  <a href="#"
-                    ><img
-                      src="img/icon_instagram.svg"
-                      width="32"
-                      height="32"
-                      alt="Инстаграм"
-                      title="Инстаграм"
-                    />Инстаграм</a
-                  >
-                </li>
-                <li class="footer-social__item">
-                  <a href="#"
-                    ><img
-                      src="img/icon_witter.svg"
-                      width="32"
-                      height="32"
-                      alt="Твиттер"
-                      title="Твиттер"
-                    />Твиттер</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="html-logo">
-              <a target="_blank" href="https://htmlacademy.ru/intensive/htmlcss"
-                ><img
-                  src="img/logo-html.svg"
-                  alt="html-academy"
-                  title="html-academy"
-                  width="27"
-                  height="34"
-              /></a>
-            </div>
-          </section>
         </div>
+        <div class="nav-down">
+          <div class="nav-down__catalog">
+            <a href="#" class="nav-down--text__dropdown">каталог товаров</a>
+          </div>
+          <div class="dropdown-catalog-menu">
+            <ul class="main-catalog-menu-list">
+              <li class="main-catalog-item">
+                <a class="main-catalog-item--link" href="#">
+                  Виртуальная реальность
+                </a>
+              </li>
+              <li class="main-catalog-item">
+                <a class="main-catalog-item--link" href="#">
+                  Моноподы для селфи
+                </a>
+              </li>
+              <li class="main-catalog-item">
+                <a class="main-catalog-item--link" href="#"> Экшн-камеры </a>
+              </li>
+            </ul>
+            <ul class="main-catalog-menu-list">
+              <li class="main-catalog-item">
+                <a class="main-catalog-item--link" href="#">
+                  Фитнес‑браслеты
+                </a>
+              </li>
+              <li class="main-catalog-item">
+                <a class="main-catalog-item--link" href="#"> Умные часы </a>
+              </li>
+            </ul>
+            <ul class="main-catalog-menu-list">
+              <li class="main-catalog-item">
+                <a class="main-catalog-item--link" href="#">
+                  Квадрокоптер
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-down__menu">
+            <ul class="nav-down__menu-list">
+              <li class="nav-down__menu-item">
+                <a href="#" class="nav-down--text">доставка</a>
+              </li>
+              <li class="nav-down__menu-item">
+                <a href="#" class="nav-down--text">гарантия</a>
+              </li>
+              <li class="nav-down__menu-item">
+                <a href="#" class="nav-down--text">контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="grid-column">
+      <section class="container slider">
+        <div class="slider__controls">
+          <input class="slider__controls-item" type="radio" id="btn-1" name="toggle-slider" checked />
+          <label for="btn-1"></label>
+          <input class="slider__controls-item" type="radio" id="btn-2" name="toggle-slider" />
+          <label for="btn-2"></label>
+          <input class="slider__controls-item" type="radio" id="btn-3" name="toggle-slider" />
+          <label for="btn-3"></label>
+        </div>
+        <div class="slider__item">
+          <div class="slider__img">
+            <img width="384" height="486" src="img/slider-1-1.png" alt="палка для селфи" title="палка для селфи" />
+          </div>
+          <div class="slider__content">
+            <div class="slider__content_number">
+              <p class="slider__content_number--text">01</p>
+            </div>
+            <div class="slider__content_text">
+              <h2 class="slider__content_text--headline">
+                Делай селфи,<br />
+                как Бен Стиллер!
+              </h2>
+              <p class="slider__content_text--text">
+                Самая длинная палка для селфи доступна в нашем магазине.<br />
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5
+                килограмм.
+              </p>
+            </div>
+            <div class="slider__button">
+              <a class="btn btn-slider" href="#">подробнее</a>
+            </div>
+            <table class="slider__feature">
+              <tr>
+                <th class="slider__feature-th">8,5 м</th>
+                <th class="slider__feature-th">5 кг</th>
+                <th class="slider__feature-th">Карбон</th>
+              </tr>
+              <tr>
+                <td class="slider__feature-td">Длина палки</td>
+                <td class="slider__feature-td">Вес палки</td>
+                <td class="slider__feature-td">Материал</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="slider__item slider__hidden">
+          <div class="slider__img">
+            <img width="345" height="485" src="img/slider-2-1.png" alt="фитнес-браслет" title="фитнес-браслет" />
+          </div>
+          <div class="slider__content">
+            <div class="slider__content_number">
+              <p class="slider__content_number--text">02</p>
+            </div>
+            <div class="slider__content_text">
+              <h2 class="slider__content_text--headline">
+                Худеем правильно!
+              </h2>
+              <p class="slider__content_text--text">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                пропускать занятия и соблюдать диету.
+              </p>
+            </div>
+            <div class="slider__button">
+              <a class="btn btn-slider" href="#">подробнее</a>
+            </div>
+            <table class="slider__feature">
+              <tr>
+                <th class="slider__feature-th">48 часов</th>
+              </tr>
+              <tr>
+                <td class="slider__feature-td">Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="slider__item slider__hidden">
+          <div class="slider__img">
+            <img width="526" height="334" src="img/slider-3-1.png" alt="квадрокоптер" title="квадрокоптер" />
+          </div>
+          <div class="slider__content">
+            <div class="slider__content_number">
+              <p class="slider__content_number--text">03</p>
+            </div>
+            <div class="slider__content_text">
+              <h2 class="slider__content_text--headline">
+                Порхает как бабочка, жалит как пчела!
+              </h2>
+              <p class="slider__content_text--text">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                лазером, замаскированным под стандартную камеру.
+              </p>
+            </div>
+            <div class="slider__button">
+              <a class="btn btn-slider" href="#">подробнее</a>
+            </div>
+            <table class="slider__feature">
+              <tr>
+                <th class="slider__feature-th">800 м</th>
+                <th class="slider__feature-th">50 м</th>
+              </tr>
+              <tr>
+                <td class="slider__feature-td">Дальность полета</td>
+                <td class="slider__feature-td">Радиус поражения</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="container main__catalog">
+        <article class="main__catalog_item">
+          <a href="catalog.html">
+            <div class="main__catalog_box">
+              <img class="main__catalog_img" src="img/popular-1.png" alt="Виртуальная реальность"
+                title="Виртуальная реальность" width="97" height="55" />
+            </div>
+            <div class="main__catalog_text">
+              <h3 class="main__catalog_text-headline">
+                Виртуальная реальность
+              </h3>
+            </div>
+          </a>
+        </article>
+        <article class="main__catalog_item">
+          <a href="catalog.html">
+            <div class="main__catalog_box">
+              <img class="main__catalog_img" src="img/popular-2.png" alt="Моноподы для селфи" title="Моноподы для селфи"
+                width="86" height="117" />
+            </div>
+            <div class="main__catalog_text">
+              <h3 class="main__catalog_text-headline">
+                Моноподы<br />
+                для селфи
+              </h3>
+            </div>
+          </a>
+        </article>
+        <article class="main__catalog_item">
+          <a href="catalog.html">
+            <div class="main__catalog_box">
+              <img class="main__catalog_img" src="img/popular-3.png" alt="Экшн-камеры" title="Экшн-камеры" width="71"
+                height="87" />
+            </div>
+            <div class="main__catalog_text">
+              <h3 class="main__catalog_text-headline">Экшн-камеры</h3>
+            </div>
+          </a>
+        </article>
+        <article class="main__catalog_item">
+          <a href="catalog.html">
+            <div class="main__catalog_box">
+              <img class="main__catalog_img" src="img/popular-4.png" alt="Фитнес-браслеты" title="Фитнес-браслеты"
+                width="107" height="65" />
+            </div>
+            <div class="main__catalog_text">
+              <h3 class="main__catalog_text-headline letter-spacing">
+                Фитнес-браслеты
+              </h3>
+            </div>
+          </a>
+        </article>
+        <article class="main__catalog_item">
+          <a href="catalog.html">
+            <div class="main__catalog_box">
+              <img class="main__catalog_img" src="img/popular-5.png" alt="Умные часы" title="Умные часы" width="56"
+                height="98" />
+            </div>
+            <div class="main__catalog_text">
+              <h3 class="main__catalog_text-headline">Умные часы</h3>
+            </div>
+          </a>
+        </article>
+        <article class="main__catalog_item">
+          <a href="catalog.html">
+            <div class="main__catalog_box">
+              <img class="main__catalog_img" src="img/popular-6.png" alt="Квадрокоптеры" title="Квадрокоптеры"
+                width="132" height="69" />
+            </div>
+            <div class="main__catalog_text">
+              <h3 class="main__catalog_text-headline">Квадрокоптеры</h3>
+            </div>
+          </a>
+        </article>
+      </section>
+      <section class="main__advantage">
+        <div class="container main__advantage_box">
+          <div class="advantage__sort">
+            <ul class="advantage__sort-list">
+              <li class="advantage__sort-item">
+                <input class="advantage__sort-radio" type="radio" id="btn__advantage-1" name="toggle" checked />
+                <label class="btn btn-advantage advantage__sort--label" for="btn__advantage-1">доставка</label>
+              </li>
+              <li class="advantage__sort-item">
+                <input class="advantage__sort-radio" type="radio" id="btn__advantage-2" name="toggle" />
+                <label class="btn btn-advantage advantage__sort--label" for="btn__advantage-2">гарантия</label>
+              </li>
+              <li class="advantage__sort-item">
+                <input class="advantage__sort-radio" type="radio" id="btn__advantage-3" name="toggle" />
+                <label class="btn btn-advantage advantage__sort--label" for="btn__advantage-3">кредит</label>
+              </li>
+            </ul>
+          </div>
+          <div class="advantage__content">
+            <div class="advantage__content_item">
+              <h2 class="advantage__content_item--headline">Доставка</h2>
+              <p class="advantage__content_item--text">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                на ваш этаж.
+              </p>
+            </div>
+            <div class="advantage__content_item advantage__hidden">
+              <h2 class="advantage__content_item--headline">Гарантия</h2>
+              <p class="advantage__content_item--text">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом
+                — не переживайте, мы выдадим вам новый. Товар, не дом, конечно
+                же.
+              </p>
+            </div>
+            <div class="advantage__content_item advantage__hidden">
+              <h2 class="advantage__content_item--headline">Кредит</h2>
+              <p class="advantage__content_item--text">
+                Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные условия кредита. Выгодные
+                для нашего банка, разумеется.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container main-brands">
+        <div class="main-brands__item">
+          <a href="#">
+            <img src="img/logo-1.png" alt="brand" title="brand" width="260" height="100" />
+          </a>
+        </div>
+        <div class="main-brands__item">
+          <a href="#">
+            <img src="img/logo-2.png" alt="brand" title="brand" width="260" height="100" />
+          </a>
+        </div>
+        <div class="main-brands__item">
+          <a href="#">
+            <img src="img/logo-3.png" alt="brand" title="brand" width="260" height="100" />
+          </a>
+        </div>
+        <div class="main-brands__item">
+          <a href="#">
+            <img src="img/logo-4.png" alt="brand" title="brand" width="260" height="100" />
+          </a>
+        </div>
+      </section>
+      <section class="container main-info">
+        <div class="info__about-us">
+          <h2 class="info__about-us--headline">О нас</h2>
+          <p class="info__about-us--text">
+            Огромный выбор гаджетов не оставит равнодушным гика,<br />
+            который есть в каждом из нас.
+          </p>
+          <p class="info__about-us--text">
+            Мы можем доставить ваш товар в самые отдаленные точки<br />
+            России! DEVICE работает со многими транспортными компаниями:
+          </p>
+          <ul class="info__about-us--list">
+            <li class="info__about-us--item">Деловые линии</li>
+            <li class="info__about-us--item">Автотрейдинг</li>
+            <li class="info__about-us--item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="btn" href="#">подробнее о нас</a>
+        </div>
+        <div class="info__contacts">
+          <h2 class="info__contacts--headline">Контакты</h2>
+          <p class="info__contacts--text">
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
+            сможете проверить работоспособность покупки. Всякое бывает.
+          </p>
+          <a href="#" class="info__contacts_map">
+            <img src="img/map-1.jpg" alt="Карта" title="Карта" width="560" height="222" />
+          </a>
+          <button class="btn btn-button">напишите нам</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-content">
+        <section class="footer-content__header">
+          <div class="footer-logo__box">
+            <img src="img/logo-6.png" width="163" height="35" alt="Логотип" title="Логотип" />
+          </div>
+          <div class="footer-user-block__box">
+            <ul class="footer-user-block__list">
+              <li class="footer-user-block__item">
+                <a class="text__user_icon-footer footer-user--nav" href="#">Войти</a>
+              </li>
+              <li class="footer-user-block__item">
+                <a class="text__compare_icon-footer footer-user--nav" href="#">Сравнить</a>
+              </li>
+              <li class="footer-user-block__item">
+                <a class="text__basket_icon-footer footer-user--nav" href="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer-content__middle">
+          <address class="footer-content__middle--address">
+            г. Москва, ул. Строителей, 15
+          </address>
+          <div class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav--text" href="#">доставка</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav--text" href="#">гарантия</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav--text" href="#">контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tel">
+            <a class="tel--text" href="tel:74954959595">Тел.: +7 (495) 495-95-95</a>
+          </div>
+        </section>
+        <section class="footer-content__footer">
+          <div class="footer-social">
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a href="#"><img src="img/icon-facebook.svg" width="32" height="32" alt="Фейсбук"
+                    title="Фейсбук" />Фейсбук</a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#"><img src="img/icon-instagram.svg" width="32" height="32" alt="Инстаграм"
+                    title="Инстаграм" />Инстаграм</a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#"><img src="img/icon-witter.svg" width="32" height="32" alt="Твиттер"
+                    title="Твиттер" />Твиттер</a>
+              </li>
+            </ul>
+          </div>
+          <div class="html-logo">
+            <a target="_blank" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg"
+                alt="html-academy" title="html-academy" width="27" height="34" /></a>
+          </div>
+        </section>
       </div>
-    </footer>
-    <section class="popup">
-      <form
-        class="write-us-form"
-        action="https://echo.htmlacademy.ru"
-        method="post"
-      >
-        <p class="write-us-item">
-          <label for="name-field"> Ваше имя:</label>
-          <input
-            class="name-field"
-            type="text"
-            name="name"
-            id="name-field"
-            placeholder="Имя Фамилия"
-          />
-        </p>
-        <p class="write-us-item">
-          <label for="email-field">Ваш e-mail:</label>
-          <input
-            class="email-field invalid-value"
-            type="email"
-            name="email"
-            id="email-field"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            placeholder="email@example.ru"
-          />
-        </p>
-        <p class="write-us-item">
-          <label for="comment-field">Текст письма:</label>
-          <textarea
-            class="comment-field"
-            name="text"
-            id="comment-field"
-            placeholder="В свободной форме"
-          ></textarea>
-        </p>
-        <button class="btn btn-button btn-popup" type="submit">
-          <span>Отправить</span>
-        </button>
-      </form>
-      <button class="mail-box__content-close" type="button">Закрыть</button>
-    </section>
-    <section class="map-popup">
-      <iframe
-        id="modal_window_map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473672!2d37.527429316044476!3d55.6870340045298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1593473712335!5m2!1sru!2sru"
-        width="994"
-        height="593"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      >
-      </iframe>
-      <button class="mail-box__content-close" type="button">Закрыть</button>
-    </section>
-  </body>
+    </div>
+  </footer>
+  <section class="popup">
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="write-us-item">
+        <label for="name-field"> Ваше имя:</label>
+        <input class="name-field" type="text" name="name" id="name-field" placeholder="Имя Фамилия" />
+      </p>
+      <p class="write-us-item">
+        <label for="email-field">Ваш e-mail:</label>
+        <input class="email-field invalid-value" type="email" name="email" id="email-field"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email@example.ru" />
+      </p>
+      <p class="write-us-item">
+        <label for="comment-field">Текст письма:</label>
+        <textarea class="comment-field" name="text" id="comment-field" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="btn btn-button btn-popup" type="submit">
+        <span>Отправить</span>
+      </button>
+    </form>
+    <button class="mail-box__content-close" type="button">Закрыть</button>
+  </section>
+  <section class="map-popup">
+    <iframe id="modal_window_map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473672!2d37.527429316044476!3d55.6870340045298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1593473712335!5m2!1sru!2sru"
+      width="994" height="593" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+    <button class="mail-box__content-close" type="button">Закрыть</button>
+  </section>
+</body>
+
 </html>
